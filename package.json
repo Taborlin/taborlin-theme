@@ -1,17 +1,17 @@
 {
-  "name": "topdoc-theme",
+  "name": "taborlin-theme",
   "version": "0.5.0",
-  "description": "Topdoc Theme for the Topcoat Demo documentation",
+  "description": "Taborlin Theme for the Taborlin Demo documentation",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/topcoat/topdoc-theme.git"
+    "url": "git://github.com/taborlin/taborlin-theme.git"
   },
   "keywords": [
-    "topdoc",
-    "topcoat",
+    "taborlin",
+    "taborlin",
     "theme",
     "template",
     "css",
@@ -27,7 +27,7 @@
   "readmeFilename": "README.md",
   "gitHead": "58eac60122954fff276592dace1f8fe7d444600b",
   "bugs": {
-    "url": "https://github.com/topcoat/topdoc-theme/issues"
+    "url": "https://github.com/taborlin/taborlin-theme/issues"
   },
   "devDependencies": {
     "mocha": "~1.11.0",
