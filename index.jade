@@ -38,6 +38,8 @@ html
 											li: a(href=siteNavItem.url)=siteNavItem.text
 								- if(templateData && templateData.download)
 									li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
+						a#slide-menu-button.topcoat-icon-button--large--quiet
+							span.topcoat-icon--large.topcoat-icon--menu-stack
 				main
 					#content.max-width
 						- each component in document.components

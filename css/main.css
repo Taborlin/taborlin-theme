@@ -26,32 +26,31 @@ pre {
   font-size: 12px;
 }
 /* Main Header */
+#container>header{
+  background: #fff;
+}
 #main-header {
   color: #373435;
-  background: #fff;
   height: 98px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 20px;
   position: relative;
 }
-#main-header hgroup {
-  text-align: center;
-}
-#main-header hgroup h1 {
+#main-header h1 {
   font-size: 40px;
   margin: 5px 0 0;
   letter-spacing: -.065em;
   line-height: 1.1em;
 }
-#main-header hgroup a {
+#main-header a {
   color: #464646;
   text-decoration: none;
 }
-#main-header hgroup a:hover {
+#main-header a:hover {
   color: #000;
 }
-#main-header hgroup p {
+#main-header p {
   font-size: 13px;
   color: #999;
   margin: 0;
@@ -59,6 +58,7 @@ pre {
 #main-header nav {
   display: none;
 }
+
 #slide-menu-button {
   position: absolute;
   top: 20px;
