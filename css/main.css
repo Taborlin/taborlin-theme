@@ -7,50 +7,20 @@ body {
   font-family: source-sans-pro, sans-serif;
   position: relative;
   -webkit-font-smoothing: antialiased;
-}
-body.light {
   background: #F4F4F4;
-}
-body.dark {
-  color: #F0F1F1;
-  background: #4A4D4E;
-}
-body.light {
   color: #181919;
 }
 
 h1 {
   font-weight: 600;
 }
-#wrapper {
+#container {
   width: 100%;
   overflow-x: hidden;
   background: inherit;
   position: relative;
 }
-#site {
-  width: 100%;
-  position: relative;
-  z-index: 10;
-  background: inherit;
-  left: 0;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-}
-#site:before{
-  position: absolute;
-  content: '';
-  left: -4px;
-  height: 100%;
-  width: 4px;
-  background: #3B3E3E;
-}
-#site.open {
-  transform: translate3d(250px, 0, 0);
-  -webkit-transform: translate3d(250px, 0, 0);
-}
+
 pre {
   font-family: source-code-pro, sans-serif;
   font-size: 12px;
