@@ -185,7 +185,7 @@ pre {
   border-radius: 1px;
   font-weight: 400;
 }
-article.component {
+article {
   padding: 0 0 10px;
 }
 #content section.code h3 {
@@ -317,7 +317,7 @@ iframe.componentframe{
   }
   #main-header nav li.selected a {
     color: #373435;
-  } 
+  }
   #slide-menu-button{
     display: none;
   }
@@ -471,6 +471,3 @@ iframe.componentframe{
     pointer-events:none;
   }
 }
-
-
-

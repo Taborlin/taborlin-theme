@@ -40,7 +40,7 @@ html
 							span.taborlin-icon--large.taborlin-icon--menu-stack
 				main#content.max-width
 					- each component in document.components
-						article.component(id=component.slug)
+						article(id=component.slug)
 							header
 								h2=component.name
 							- if(component.iframe)
