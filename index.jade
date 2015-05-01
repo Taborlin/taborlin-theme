@@ -24,20 +24,10 @@ html
 			script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
 	body
 		#container
-				header
-					#main-header.max-width
+				header(taborlin="awesome")
+					.main-header.max-width(taborlin="spectacular")
 							h1: a(href="https://github.com/Taborlin") Taborlin
 							p Styleguide generator
-						nav
-							ul
-								-if(templateData && templateData.siteNav)
-									- each siteNavItem, i in templateData.siteNav
-										- if(i == 0)
-											li.selected: a(href=siteNavItem.url)=siteNavItem.text
-										- else
-											li: a(href=siteNavItem.url)=siteNavItem.text
-								- if(templateData && templateData.download)
-									li: a#download-btn(href=templateData.download.url, onclick="_gaq.push(['_trackEvent', 'download', 'click',,, false]);")=templateData.download.label
 						a#slide-menu-button.topcoat-icon-button--large--quiet
 							span.topcoat-icon--large.topcoat-icon--menu-stack
 				main
@@ -64,7 +54,7 @@ html
 											h3 HTML
 											pre.html
 												code(data-language="html")=component.markup
-					aside#site
+					aside#site(taborlin="futuristic")
 						#sideNav.combo
 							select.taborlin-select
 								- each item in nav
