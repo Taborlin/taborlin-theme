@@ -212,12 +212,30 @@ section.examples li {
 aside {
   order: 1;
   position: absolute;
-  width: 100vw;
-  left: -100vw;
+  width: 75vw;
+  left: -75vw;
+  /*width: 100%;*/
+  /*position: relative;*/
+  z-index: 10;
+  background: inherit;
+  /*left: 0;*/
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
+/*aside:before{
+  position: absolute;
+  content: '';
+  left: -4px;
+  height: 100%;
+  width: 4px;
+  background: #3B3E3E;
+}*/
+
 aside.open {
-  transform: translateX(100vw);
-  -webkit-transform: translateX(100vw);
+  transform: translateX(75vw);
+  -webkit-transform: translateX(75vw);
 }
 #sideNav {
   background: #F4F4F4;
