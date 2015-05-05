@@ -66,7 +66,7 @@ header[taborlin]{
   display: none;
 }
 
-/*#slide-menu-button {
+#trigger-overlay {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -109,14 +109,14 @@ header[taborlin]{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-#slide-menu:disabled,
-#slide-menu.is-disabled {
+#trigger-overlay:disabled,
+#trigger-overlay.is-disabled {
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
 }
-#slide-menu-button:active,
-#slide-menu-button.is-active {
+#trigger-overlay:active,
+#trigger-overlay.is-active {
   color: #454545;
   text-shadow: 0 1px #fff;
   background-color: #d3d7d7;
@@ -124,7 +124,7 @@ header[taborlin]{
   -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
   box-shadow: inset 0 1px rgba(0,0,0,0.12);
 }
-#slide-menu-button span {
+#trigger-overlay span {
   background-repeat: no-repeat;
   background-image: url('../img/listview_icon.svg');
   -webkit-background-size: cover;
@@ -137,7 +137,7 @@ header[taborlin]{
   vertical-align: middle;
   width: 1.3rem;
   height: 1.3rem;
-}*/
+}
 #download-btn {
   display: none;
 }
@@ -212,6 +212,9 @@ section.examples li {
   color: #58595A;
 }
 /* Side Nav */
+aside {
+  order: 1;
+}
 /*aside {
   order: 1;
   position: absolute;
@@ -240,6 +243,12 @@ aside.open {
   transform: translateX(75vw);
   -webkit-transform: translateX(75vw);
 }*/
+#sideNav{
+  position: relative;
+  top: 20%;
+  text-align: center;
+  transition-delay: 0.4s;
+}
 /*#sideNav {
   background: #F4F4F4;
   position: absolute;
@@ -314,7 +323,7 @@ footer{
   .main-header[taborlin] nav li.selected a {
     color: #373435;
   }
-  #slide-menu-button{
+  #trigger-overlay {
     display: none;
   }
   .main-header[taborlin] hgroup {
@@ -338,7 +347,7 @@ footer{
     padding-left: 240px;
   }
   /* Side Nav */
-  #sideNav {
+  #site {
     background: transparent;
     width: 220px;
     z-index: 20;
@@ -346,11 +355,11 @@ footer{
     top: 150px;
     height: auto;
   }
-  #sideNav .combo {
+  #site .combo {
     border-bottom: none;
     padding: 36px 0;
   }
-  #sideNav li a {
+  #site li a {
     padding: 12px 0 0 10px;
   }
   body.light #sideNav li a {
@@ -364,7 +373,7 @@ footer{
   #content {
     padding-left: 300px;
   }
-  #sideNav li a {
+  #site li a {
     display: block;
     height: 60px;
     padding: 22px 0 0 10px;
@@ -383,12 +392,12 @@ footer{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /*section.code div:first-child {
+  section.code div:first-child {
     padding-right: 5px;
   }
   section.code div:last-child {
     padding-left: 5px;
-  }*/
+  }
   .max-width {
     max-width: 1180px;
     position: relative;
