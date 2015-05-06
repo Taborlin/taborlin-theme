@@ -59,10 +59,10 @@ html
 											h3 HTML
 											pre.html
 												code(data-language="html")=component.markup
-					aside#site.overlay.overlay-cornershape(taborlin="futuristic", data-path-to= 'm 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z')
+					aside#site.overlay(taborlin="futuristic", data-path-to= 'm 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z')
 						svg(xmlns="http://www.w3.org/2000/svg", width="100%", height="100%", viewBox="0 0 1440 806", preserveAspectRatio="none")
-							path.overlay-path(d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z")
-						button.overlay-close(type="button") Close
+							path.overlay__path(d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z")
+						button.overlay__close(type="button") Close
 						#sideNav.combo
 							select.cs-select.cs-skin-border
 								- each item in nav
@@ -70,7 +70,7 @@ html
 										option(value=item.url, selected="selected")=item.title
 									- else
 										option(value=item.url)=item.title
-						nav#pageNav
+						nav#pageNav.overlay__nav
 							ul
 								- each component in document.components
 									li: a(href='#'+component.slug)=component.name
@@ -82,4 +82,4 @@ html
 						script(type="text/javascript").
 							(function() {[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	new SelectFx(el);} );})();
 							console.log(window.innerWidth);
-							window.addEventListener("resize", function(){var aside = document.getElementById('site'); aside.className ="overlay overlay-cornershape"; if(window.innerWidth >= 650){aside.className = "";}});
+							//window.addEventListener("resize", function(){var aside = document.getElementById('site'); aside.className ="overlay overlay-cornershape"; if(window.innerWidth >= 650){aside.className = "";}});
