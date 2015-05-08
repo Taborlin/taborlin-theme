@@ -14,17 +14,17 @@ window.onload = function(){
 			return false;
 		};
 	};
-	var slideMenuButton = document.getElementById('slide-menu-button');
-	slideMenuButton.onclick = function(e) {
-		var site = document.getElementById('site');
-		var cl = site.classList;
-		if (cl.contains('open')) {
-			cl.remove('open');
-		} else {
-			cl.add('open');
-		}
-	};
-	var docNavs = document.getElementsByClassName('taborlin-select');
+	// var slideMenuButton = document.getElementById('slide-menu-button');
+	// slideMenuButton.onclick = function(e) {
+	// 	var site = document.getElementById('site');
+	// 	var cl = site.classList;
+	// 	if (cl.contains('open')) {
+	// 		cl.remove('open');
+	// 	} else {
+	// 		cl.add('open');
+	// 	}
+	// };
+	var docNavs = document.getElementsByClassName('overlay__select');
 	for (var j = docNavs.length - 1; j >= 0; j--) {
 		docNavs[j].onchange = function(e){
 			window.location.href = e.target[e.target.selectedIndex].value;
