@@ -61,6 +61,19 @@ html
 							path.overlay__path(d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z")
 						button.overlay__close(type="button") Close
 						#sideNav.combo
+							#select.overlay__select.cs-skin-border(tabindex = "0")
+								-each item in nav
+									- if(item.url == document.url)
+										span.cs-placeholder=item.title
+								.cs-options
+									ul
+										- each item in nav
+											- if(item.url == document.url)
+												li(data-option, data-value=item.url, selected="selected")
+													span=item.title
+											- else
+												li(data-option, data-value=item.url)
+													span=item.title
 							select.overlay__select.cs-skin-border
 								- each item in nav
 									- if(item.url == document.url)

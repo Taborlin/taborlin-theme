@@ -14,16 +14,15 @@ window.onload = function(){
 			return false;
 		};
 	};
-	// var slideMenuButton = document.getElementById('slide-menu-button');
-	// slideMenuButton.onclick = function(e) {
-	// 	var site = document.getElementById('site');
-	// 	var cl = site.classList;
-	// 	if (cl.contains('open')) {
-	// 		cl.remove('open');
-	// 	} else {
-	// 		cl.add('open');
-	// 	}
-	// };
+	var select = document.getElementById('select');
+	select.onclick = function(e) {
+		var cl = select.classList;
+		if (cl.contains('cs-active')) {
+			cl.remove('cs-active');
+		} else {
+			cl.add('cs-active');
+		}
+	};
 	var docNavs = document.getElementsByClassName('overlay__select');
 	for (var j = docNavs.length - 1; j >= 0; j--) {
 		docNavs[j].onchange = function(e){
