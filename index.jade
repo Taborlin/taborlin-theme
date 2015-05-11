@@ -70,10 +70,12 @@ html
 										- each item in nav
 											- if(item.url == document.url)
 												li(data-option, data-value=item.url, selected="selected")
-													span=item.title
+													a(href=item.url)
+														span=item.title
 											- else
 												li(data-option, data-value=item.url)
-													span=item.title
+													a(href=item.url)
+														span=item.title
 							select.overlay__select.cs-skin-border
 								- each item in nav
 									- if(item.url == document.url)
@@ -81,7 +83,7 @@ html
 									- else
 										option(value=item.url)=item.title
 						nav#pageNav.overlay__nav
-							ul
+							ul.overlay__nav__ul
 								- each component in document.components
 									li: a(href='#'+component.slug)=component.name
 				footer

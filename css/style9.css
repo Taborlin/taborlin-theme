@@ -37,7 +37,7 @@
 	transform: translateY(-50%);
 }
 
-.overlay ul {
+.overlay__nav__ul {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
@@ -46,7 +46,7 @@
 	position: relative;
 }
 
-.overlay ul li {
+.overlay__nav__ul li {
 	display: block;
 	height: 20%;
 	height: calc(100% / 5);
@@ -55,7 +55,7 @@
 	backface-visibility: hidden;
 }
 
-.overlay ul li a {
+.overlay__nav__ul li a {
 	font-size: 54px;
 	font-weight: 300;
 	display: block;
@@ -64,8 +64,8 @@
 	transition: color 0.2s;
 }
 
-.overlay ul li a:hover,
-.overlay ul li a:focus {
+.overlay__nav__ul li a:hover,
+.overlay__nav__ul li a:focus {
 	color: #f0f0f0;
 }
 
@@ -117,7 +117,7 @@
 		height: 70%;
 		font-size: 34px;
 	}
-	.overlay ul li {
+	.overlay__nav__ul li {
 		min-height: 34px;
 	}
 }
