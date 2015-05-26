@@ -80,3 +80,13 @@ div.cs-skin-border {
 	text-decoration: none;
 	color: inherit;
 }
+
+@media screen and (min-width: 650px) {
+	.cs-skin-border > span {
+		border: 5px solid gray;
+	}
+	div.cs-skin-border {
+		font-size: 1em;
+		color: inherit;
+	}
+}

@@ -247,7 +247,7 @@ aside.open {
   position: relative;
   top: 20%;
   text-align: center;
-  transition-delay: 0.4s;
+  /*transition-delay: 0.4s;*/
 }
 /*#sideNav {
   background: #F4F4F4;
@@ -361,6 +361,7 @@ footer{
   }
   #site li a {
     padding: 12px 0 0 10px;
+    text-decoration: none;
   }
   body.light #sideNav li a {
     color: #797B7B;
