@@ -88,21 +88,21 @@
 }
 
 .overlay nav,
-.overlay .overlay__close {
+.overlay .overlay__close, .cs-placeholder {
 	opacity: 0;
-	-webkit-transition: opacity 0.4s 0.4s;
-	transition: opacity 0.4s 0.4s;
+	-webkit-transition: opacity 0s 0s;
+	transition: opacity 0s 0s;
 }
 
 .overlay.open nav,
-.overlay.open .overlay__close {
+.overlay.open .overlay__close, .cs-placeholder {
 	opacity: 1;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
 .overlay.close nav,
-.overlay.close .overlay-close {
+.overlay.close .overlay-close, .combo {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
