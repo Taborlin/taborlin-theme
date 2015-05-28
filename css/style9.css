@@ -7,8 +7,6 @@
 	left: 0;
 	background: transparent;
 	visibility: hidden;
-	-webkit-transition: visibility 0s 0.5s;
-	transition: visibility 0s 0.5s;
 }
 
 /* Overlay closing cross */
@@ -76,7 +74,11 @@
 	-webkit-transition: none;
 	transition: none;
 }
-
+.overlay.close {
+	visibility: hidden;
+	-webkit-transition: visibility 0s 0.5s;
+	transition: visibility 0s 0.5s;
+}
 .overlay svg {
 	position: absolute;
 	top: 0;
@@ -113,6 +115,8 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		-webkit-transition: visibility 0s 0s;
+		transition: visibility 0s 0s;
 	}
 	.overlay nav,
 	.overlay .overlay__close {
