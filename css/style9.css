@@ -90,21 +90,21 @@
 }
 
 .overlay nav,
-.overlay .overlay__close, .cs-placeholder {
+.overlay .overlay__close, .overlay .cs-placeholder {
 	opacity: 0;
 	-webkit-transition: opacity 0s 0s;
 	transition: opacity 0s 0s;
 }
 
 .overlay.open nav,
-.overlay.open .overlay__close, .cs-placeholder {
+.overlay.open .overlay__close, .overlay.open .cs-placeholder {
 	opacity: 1;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
 .overlay.close nav,
-.overlay.close .overlay-close, .combo {
+.overlay.close .overlay-close, .overlay.close .cs-placeholder {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
@@ -117,6 +117,9 @@
 		text-overflow: ellipsis;
 		-webkit-transition: visibility 0s 0s;
 		transition: visibility 0s 0s;
+	}
+	.overlay .cs-placeholder {
+		opacity: 1;
 	}
 	.overlay nav,
 	.overlay .overlay__close {
