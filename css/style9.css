@@ -80,7 +80,7 @@
 	transition: visibility 0s 0.5s;
 }
 .overlay svg {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 }
