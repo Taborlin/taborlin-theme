@@ -246,7 +246,7 @@ aside.open {
 #sideNav{
   position: relative;
   top: 20%;
-  text-align: center;
+  /*text-align: center;*/
   /*transition-delay: 0.4s;*/
 }
 /*#sideNav {

@@ -54,12 +54,16 @@
 }
 
 .overlay__nav__ul li a {
-	font-size: 54px;
+	font-size: 40px;
 	font-weight: 300;
 	display: block;
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+	width: 370px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .overlay__nav__ul li a:hover,
@@ -107,6 +111,33 @@
 .overlay.close .overlay-close, .overlay.close .cs-placeholder {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
+}
+@media screen and (min-width: 450px) {
+	.overlay__nav__ul li a {
+		font-size: 40px;
+		width: 440px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+@media screen and (min-width: 550px) {
+	.overlay__nav__ul li a {
+		font-size: 54px;
+		width: 540px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+@media screen and (min-width: 630px) {
+	.overlay__nav__ul li a {
+		font-size: 54px;
+		width: 630px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 @media screen and (min-width: 650px) {
 	.overlay {
