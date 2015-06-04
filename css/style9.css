@@ -111,10 +111,6 @@
 @media screen and (min-width: 650px) {
 	.overlay {
 		visibility: visible;
-		display: block;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
 		-webkit-transition: visibility 0s 0s;
 		transition: visibility 0s 0s;
 	}
@@ -128,6 +124,10 @@
 	.overlay__nav__ul li a {
 		font-size: 20px;
 		color: inherit;
+		width: 210px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.overlay nav {
 		-webkit-transform: translateY(0);
@@ -156,13 +156,13 @@
 		transform: translateX(20px);
 	}
 
-	.overlay__nav__ul li a::after {
+	/*.overlay__nav__ul li a::after {
 		margin-left: 10px;
 		content: '-';
 		-webkit-transform: translateX(-20px);
 		-moz-transform: translateX(-20px);
 		transform: translateX(-20px);
-	}
+	}*/
 
 	.overlay__nav__ul li a:hover::before,
 	.overlay__nav__ul li a:hover::after,
@@ -174,7 +174,11 @@
 		transform: translateX(0px);
 	}
 }
-
+@media screen and (min-width: 880px){
+	.overlay__nav__ul li a {
+		width: 300px;
+	}
+}
 @media screen and (max-height: 30.5em) {
 	.overlay nav {
 		height: 70%;
