@@ -42,4 +42,6 @@
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
+	window.addEventListener("resize", function(){  var select = document.getElementById('select'); var selectClass = select.classList; var aside = document.getElementById('site'); var cl = aside.classList; if(selectClass.contains('cs-active') && !(cl.contains('open'))){toggleOverlay()}});
+
 })();

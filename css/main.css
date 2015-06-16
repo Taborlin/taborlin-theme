@@ -92,8 +92,8 @@ header[taborlin]{
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 0 0.5rem;
-  line-height: 2rem;
+  /*padding: 0 0.5rem;*/
+  /*line-height: 2rem;*/
   letter-spacing: 1px;
   color: #454545;
   text-shadow: 0 1px #fff;
@@ -104,7 +104,7 @@ header[taborlin]{
   border-radius: 3px;
   width: 2.6rem;
   height: 2.6rem;
-  line-height: 2.6rem;
+  /*line-height: 2.6rem;*/
   border: 1px solid transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -135,8 +135,8 @@ header[taborlin]{
   vertical-align: top;
   overflow: hidden;
   vertical-align: middle;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 40px;
+  height: 40px;
 }
 #download-btn {
   display: none;
@@ -245,7 +245,9 @@ aside.open {
 }*/
 #sideNav{
   position: relative;
-  top: 20%;
+  top: 100px;
+  width: 95%;
+  margin: auto;
   /*text-align: center;*/
   /*transition-delay: 0.4s;*/
 }

@@ -85,7 +85,8 @@ html
 						script(src="js/classie.js")
 						script(src='js/demo9.js')
 						script
-							window.addEventListener("resize", function(){var select = document.getElementById('select'); var cl = select.classList; if(window.innerWidth < 650 && cl.contains('cs-active')){cl.remove('cs-active');}});
+							//- window.addEventListener("resize", function(){var select = document.getElementById('select'); var cl =select.classList; cl.remove('cs-active');});
+							//- window.addEventListener("resize", function(){var select = document.getElementById('select'); var selectClass = select.classList; var aside = document.getElementById('site'); var cl = aside.classList; if(window.innerWidth < 650 && !(cl.contains('open'))){selectClass.remove('cs-active');}});
 						//- script(src='js/selectFx.js')
 						//- script(type="text/javascript").
 							//- (function() {[].slice.call( document.querySelectorAll( 'select.overlay__select' ) ).forEach( function(el) {	new SelectFx(el);} );})();

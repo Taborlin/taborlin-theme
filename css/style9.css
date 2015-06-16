@@ -11,28 +11,31 @@
 
 /* Overlay closing cross */
 .overlay__close {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	position: absolute;
-	right: 20px;
+	right: 2.5%;
 	top: 20px;
 	overflow: hidden;
 	border: none;
-	background: url(../img/cross.png) no-repeat center center;
+	background: url(../img/x-button.png) no-repeat center center;
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
 	z-index: 100;
+
 }
 
 /* Menu style */
 .overlay nav {
 	/*text-align: center;*/
 	position: relative;
-	top: 50%;
-	height: 60%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	top: 120px;
+	width: 95%;
+	margin: auto;
+	/*height: 60%;*/
+	/*-webkit-transform: translateY(-50%);*/
+	/*transform: translateY(-50%);*/
 }
 
 .overlay__nav__ul {
@@ -133,7 +136,7 @@
 @media screen and (min-width: 630px) {
 	.overlay__nav__ul li a {
 		font-size: 54px;
-		width: 630px;
+		width: 620px;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -212,7 +215,7 @@
 }
 @media screen and (max-height: 30.5em) {
 	.overlay nav {
-		height: 70%;
+		/*height: 70%;*/
 		font-size: 34px;
 	}
 	.overlay__nav__ul li {
