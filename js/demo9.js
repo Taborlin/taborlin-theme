@@ -22,6 +22,11 @@
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );
+			var select = document.getElementById('select');
+				var cl = select.classList;
+				if (cl.contains('cs-active')) {
+					cl.remove('cs-active');
+				}
 
 			var onEndTransitionFn = function( ev ) {
 				classie.remove( overlay, 'close' );
