@@ -1,10 +1,12 @@
+@import "../fonts/stylesheet.css";
+
 html,body{
   margin:0;
   padding:0;
   height: 100%;
 }
 body {
-  font-family: source-sans-pro, sans-serif;
+  font-family: open-sans-regular, sans-serif;
   position: relative;
   -webkit-font-smoothing: antialiased;
   background: #F4F4F4;
@@ -24,6 +26,7 @@ body[taborlin]{};
 }
 h1{
   font-weight: 600;
+  font-family: 'open-sans-bold', sans-serif;
 }
 
 pre {
@@ -92,8 +95,6 @@ header[taborlin]{
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  /*padding: 0 0.5rem;*/
-  /*line-height: 2rem;*/
   letter-spacing: 1px;
   color: #454545;
   text-shadow: 0 1px #fff;
@@ -104,7 +105,6 @@ header[taborlin]{
   border-radius: 3px;
   width: 2.6rem;
   height: 2.6rem;
-  /*line-height: 2.6rem;*/
   border: 1px solid transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -183,6 +183,7 @@ article {
   position: relative;
   display: inline-block;
   padding-right: 10px;
+  font-family: open-sans-light, sans-serif;
 }
 #content header{
   position: relative;
@@ -215,78 +216,13 @@ section.examples li {
 aside {
   order: 1;
 }
-/*aside {
-  order: 1;
-  position: absolute;
-  width: 75vw;
-  left: -75vw;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-  background: inherit;
-  left: 0;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-}
-aside:before{
-  position: absolute;
-  content: '';
-  left: -4px;
-  height: 100%;
-  width: 4px;
-  background: #3B3E3E;
-}
 
-aside.open {
-  transform: translateX(75vw);
-  -webkit-transform: translateX(75vw);
-}*/
 #sideNav{
   position: relative;
   top: 100px;
   width: 95%;
   margin: auto;
-  /*text-align: center;*/
-  /*transition-delay: 0.4s;*/
 }
-/*#sideNav {
-  background: #F4F4F4;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  height: 100%;
-  left: 0;
-}
-#sideNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#sideNav li a {
-  color: #F0F1F1;
-  display: block;
-  height: 46px;
-  font-size: 16px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 12px 0 0 20px;
-  text-decoration: none;
-}
-#sideNav .combo {
-  border-bottom: 1px solid #58595A;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  display: block;
-}
-#pageNav {
-  background: black;
-}
-#pageNav li {
-  border-bottom: 1px solid #58595A;
-}*/
 iframe.componentframe{
   width: 100%;
   height: auto;
