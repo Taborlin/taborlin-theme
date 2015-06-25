@@ -283,19 +283,23 @@ footer{
   }
   #content {
     padding-left: 240px;
+    padding-top: 0px;
+  }
+  article:first-child {
+    border-top: solid gray 5px;
   }
   /* Side Nav */
   #site {
     background: transparent;
     width: 220px;
     z-index: 20;
-    left: 10px;
-    top: 150px;
+    /*left: 10px;*/
+    /*top: 150px;*/
     height: auto;
   }
   #site .combo {
     border-bottom: none;
-    padding: 36px 0;
+    /*padding: 36px 0;*/
   }
   #site li a {
     padding: 12px 0 0 10px;
@@ -306,6 +310,9 @@ footer{
   }
   body.light #pageNav li {
     border-bottom: 1px solid #E0E0E0;
+  }
+  #sideNav {
+    top: 0;
   }
 }
 @media screen and (min-width: 880px) {
