@@ -24,10 +24,10 @@ html
 		script(src = 'js/main.js')
 		script(src = 'js/rainbow-custom.min.js')
 		
-	body
+	body(class="taborlin")
 		#container
-				header(taborlin="awesome")
-					.main-header.max-width(taborlin="spectacular")
+				header(class="taborlin")
+					.main-header(class="taborlin")
 							h1: a(href="https://github.com/Taborlin") Taborlin
 							p Styleguide generator
 						button#trigger-overlay.topcoat-icon-button--large--quiet(type="button")
@@ -56,7 +56,7 @@ html
 											h3 HTML
 											pre.html
 												code(data-language="html")=component.markup
-					aside#site.overlay(taborlin="futuristic", data-path-to= 'm 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z')
+					aside#site.overlay(class="taborlin", data-path-to= 'm 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z')
 						svg(xmlns="http://www.w3.org/2000/svg", width="100%", height="100%", viewBox="0 0 1440 806", preserveAspectRatio="none")
 							path.overlay__path(d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z")
 						button.overlay__close(type="button") Close

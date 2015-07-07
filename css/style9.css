@@ -3,10 +3,9 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	/*top: 0;*/
-	/*left: 0;*/
 	background: transparent;
 	visibility: hidden;
+	top: 0;
 }
 
 /* Overlay closing cross */
@@ -139,6 +138,7 @@
 		visibility: visible;
 		-webkit-transition: visibility 0s 0s;
 		transition: visibility 0s 0s;
+		top: inherit;
 	}
 	.overlay .cs-placeholder {
 		opacity: 1;
