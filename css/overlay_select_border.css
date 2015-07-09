@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-div.cs-skin-border {
+div.overlay_select_border {
 	background: transparent;
 	font-size: 2em;
 	font-weight: 700;
@@ -17,27 +17,27 @@ div.cs-skin-border {
 }
 
 @media screen and (max-width: 30em) {
-	div.cs-skin-border { font-size: 1em; }
+	div.overlay_select_border { font-size: 1em; }
 }
 
-.cs-skin-border > span {
+.overlay_select_border > span {
 	border: 5px solid white;
 	-webkit-transition: background 0.2s, border-color 0.2s;
 	transition: background 0.2s, border-color 0.2s;
 }
 
-.cs-skin-border > span::after,
-.cs-skin-border .cs-selected span::after {
+.overlay_select_border > span::after,
+.overlay_select_border .overlay_selected span::after {
 	font-family: 'icomoon';
 	content: '\e000';
 }
 
-.cs-skin-border ul span::after {
+.overlay_select_border ul span::after {
 	content: '';
 	opacity: 0;
 }
 
-.cs-skin-border .cs-selected span::after {
+.overlay_select_border .overlay_selected span::after {
 	content: '\e00e';
 	color: #ddd9c9;
 	font-size: 1.5em;
@@ -46,13 +46,13 @@ div.cs-skin-border {
 	transition: opacity 0.2s;
 }
 
-.cs-skin-border.cs-active > span {
+.overlay_select_border.cs-active > span {
 	background: #fff;
 	border-color: #fff;
 	color: #2980b9;
 }
 
-.cs-skin-border .cs-options {
+.overlay_select_border .cs-options {
 	color: #2980b9;
 	font-size: 0.75em;
 	opacity: 0;
@@ -60,20 +60,20 @@ div.cs-skin-border {
 	transition: opacity 0.2s, visibility 0s 0.2s;
 }
 
-.cs-skin-border.cs-active .cs-options {
+.overlay_select_border.cs-active .cs-options {
 	opacity: 1;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
 
-.cs-skin-border ul span {
+.overlay_select_border ul span {
 	padding: 1em 2em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-.cs-skin-border .cs-options li span:hover,
-.cs-skin-border li.cs-focus span {
+.overlay_select_border .cs-options li span:hover,
+.overlay_select_border li.cs-focus span {
 	background: #f5f3ec;
 }
 .cs-options a {
@@ -82,10 +82,10 @@ div.cs-skin-border {
 }
 
 @media screen and (min-width: 650px) {
-	.cs-skin-border > span {
+	.overlay_select_border > span {
 		border: 5px solid gray;
 	}
-	div.cs-skin-border {
+	div.overlay_select_border {
 		font-size: 1em;
 		color: inherit;
 	}

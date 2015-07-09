@@ -82,7 +82,7 @@
 		this.selOptsCount = this.selOpts.length;
 
 		// current index
-		this.current = this.selOpts.indexOf( this.selEl.querySelector( 'li.cs-selected' ) ) || -1;
+		this.current = this.selOpts.indexOf( this.selEl.querySelector( 'li.overlay_selected' ) ) || -1;
 
 		// placeholder elem
 		this.selPlaceholder = this.selEl.querySelector( 'span.cs-placeholder' );
@@ -99,7 +99,7 @@
 			var optclass = '', classes = '', link = '';
 
 			if( el.selectedOpt && !this.foundSelected && !this.hasDefaultPlaceholder ) {
-				classes += 'cs-selected ';
+				classes += 'overlay_selected ';
 				this.foundSelected = true;
 			}
 			// extra classes
@@ -278,12 +278,12 @@
 		// change native select element´s value
 		this.el.value = opt.getAttribute( 'data-value' );
 
-		// remove class cs-selected from old selected option and add it to current selected option
-		var oldOpt = this.selEl.querySelector( 'li.cs-selected' );
+		// remove class overlay_selected from old selected option and add it to current selected option
+		var oldOpt = this.selEl.querySelector( 'li.overlay_selected' );
 		if( oldOpt ) {
-			classie.remove( oldOpt, 'cs-selected' );
+			classie.remove( oldOpt, 'overlay_selected' );
 		}
-		classie.add( opt, 'cs-selected' );
+		classie.add( opt, 'overlay_selected' );
 
 		// if there´s a link defined
 		if( opt.getAttribute( 'data-link' ) ) {

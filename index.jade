@@ -14,8 +14,8 @@ html
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/brackets.css')
 		//- link(rel = 'stylesheet', type = 'text/css', href = 'css/topcoat-select.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay.css')
-		link(rel = 'stylesheet', type = 'text/css', href = 'css/cs-select.css')
-		link(rel = 'stylesheet', type = 'text/css', href = 'css/cs-skin-border.css')
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay_select.css')
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay_select_border.css')
 		script(type="text/javascript").
 		//if lt IE 9
 			script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
@@ -61,7 +61,7 @@ html
 							path.overlay__path(d="m 0,0 1439.999975,0 0,805.99999 0,-805.99999 z")
 						button.overlay__close(type="button") Close
 						#sideNav.combo
-							#select.overlay__select.cs-skin-border(tabindex = "0")
+							#select.overlay__select.overlay_select_border(tabindex = "0")
 								-each item in nav
 									- if(item.url == document.url)
 										span.cs-placeholder=item.title
@@ -69,7 +69,7 @@ html
 									ul
 										- each item in nav
 											- if(item.url == document.url)
-												li.cs-selected(data-option, data-value=item.url, selected="selected")
+												li.overlay_selected(data-option, data-value=item.url, selected="selected")
 													a(href=item.url)
 														span=item.title
 											- else
