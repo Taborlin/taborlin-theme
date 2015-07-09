@@ -46,7 +46,8 @@ div.overlay__select:focus {
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -63,7 +64,8 @@ div.overlay__select:focus {
 
 .overlay__select.cs-active > span::after {
 	-webkit-transform: translateY(-50%) rotate(180deg);
-	transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	    transform: translateY(-50%) rotate(180deg);
 }
 
 div.cs-active {
