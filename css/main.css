@@ -33,10 +33,6 @@ h1{
   font-family: 'open-sans-bold', sans-serif;
 }
 
-pre {
-  font-family: source-code-pro, sans-serif;
-  font-size: 12px;
-}
 /* Main Header */
 header.taborlin{
   background: #fff;
@@ -298,21 +294,16 @@ footer{
     padding-left: 240px;
     padding-top: 0px;
   }
-  article:first-child {
-    /*border-top: solid gray 5px;*/
-  }
+
   /* Side Nav */
   #site {
     background: transparent;
     width: 220px;
     z-index: 20;
-    /*left: 10px;*/
-    /*top: 150px;*/
     height: auto;
   }
   #site .combo {
     border-bottom: none;
-    /*padding: 36px 0;*/
     margin-top: 15px;
     margin-left: 30px;
   }
@@ -349,7 +340,6 @@ footer{
   }
   section.code div {
     display: inline-block;
-    /*width: 48%;*/
     vertical-align: top;
     box-sizing: border-box;
   }

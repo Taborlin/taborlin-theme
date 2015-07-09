@@ -27,7 +27,6 @@
 
 /* Menu style */
 .overlay nav {
-	/*text-align: center;*/
 	position: relative;
 	top: 120px;
 	width: 95%;
@@ -201,7 +200,6 @@
 }
 @media screen and (max-height: 30.5em) {
 	.overlay nav {
-		/*height: 70%;*/
 		font-size: 34px;
 	}
 	.overlay__nav__ul li {
