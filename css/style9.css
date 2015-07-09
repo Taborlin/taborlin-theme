@@ -71,6 +71,7 @@
 	visibility: visible;
 	-webkit-transition: none;
 	transition: none;
+	z-index: 10000;
 }
 .overlay.close {
 	visibility: hidden;
