@@ -17,7 +17,7 @@
     "css",
     "documentation"
   ],
-  "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
+  "author": "Spencer Palmer <ViaPalmersp@gmail.com> (http://www.palmersp.com)",
   "licenses": [
     {
       "type": "Apache 2.0",
@@ -25,9 +25,8 @@
     }
   ],
   "readmeFilename": "README.md",
-  "gitHead": "58eac60122954fff276592dace1f8fe7d444600b",
   "bugs": {
-    "url": "https://github.com/taborlin/taborlin-theme/issues"
+    "url": "https://github.com/taborlin/taborlin/issues"
   },
   "devDependencies": {
     "mocha": "~1.11.0",
