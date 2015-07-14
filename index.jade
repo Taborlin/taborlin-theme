@@ -12,7 +12,6 @@ html
 				!{document.minified}
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/brackets.css')
-		//- link(rel = 'stylesheet', type = 'text/css', href = 'css/topcoat-select.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay_select.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/overlay_select_border.css')
@@ -83,12 +82,4 @@ html
 				footer
 					#main-footer
 						script(src="js/classie.js")
-						script(src='js/demo9.js')
-						script
-							//- window.addEventListener("resize", function(){var select = document.getElementById('select'); var cl =select.classList; cl.remove('cs-active');});
-							//- window.addEventListener("resize", function(){var select = document.getElementById('select'); var selectClass = select.classList; var aside = document.getElementById('site'); var cl = aside.classList; if(window.innerWidth < 650 && !(cl.contains('open'))){selectClass.remove('cs-active');}});
-						//- script(src='js/selectFx.js')
-						//- script(type="text/javascript").
-							//- (function() {[].slice.call( document.querySelectorAll( 'select.overlay__select' ) ).forEach( function(el) {	new SelectFx(el);} );})();
-							//- console.log(window.innerWidth);
-							//window.addEventListener("resize", function(){var aside = document.getElementById('site'); aside.className ="overlay overlay-cornershape"; if(window.innerWidth >= 650){aside.className = "";}});
+						script(src='js/overlay.js')
