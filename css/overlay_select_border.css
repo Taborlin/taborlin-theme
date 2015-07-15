@@ -39,8 +39,6 @@ div.overlay_select_border {
 
 .overlay_select_border .overlay_selected span::after {
 	content: '\e00e';
-	color: #ddd9c9;
-	font-size: 1.5em;
 	opacity: 1;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
@@ -88,5 +86,12 @@ div.overlay_select_border {
 	div.overlay_select_border {
 		font-size: 1em;
 		color: inherit;
+	}
+	span.cs-placeholder {
+		font-size: 1.2em;
+	}
+
+	.overlay_select_border .cs-options {
+		font-size: 1em;
 	}
 }
