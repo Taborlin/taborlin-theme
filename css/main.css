@@ -15,7 +15,6 @@ body.taborlin {
 
 #container {
   width: 100%;
-  /*overflow-x: hidden;*/
   background: inherit;
   position: relative;
   display: -webkit-box;
